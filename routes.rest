@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/623aa47c1edbe7cfe0d4494b
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"lithope",
+    "subscribedToChannel":"Valorant"
+}
+
+###
+DELETE http://localhost:3000/subscribers/623aa47c1edbe7cfe0d4494b
+
+###
+PATCH  http://localhost:3000/subscribers/623aa6b31edbe7cfe0d44951
+Content-Type: application/json
+
+{
+    "subscribedToChannel":"Coffee"
+}
